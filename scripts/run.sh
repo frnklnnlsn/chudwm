@@ -15,7 +15,7 @@ wireplumber &
 xrdb merge ~/.config/chadwm/.Xresources
 xset r rate 200 50 &
 ~/.fehbg &
-picom -b &
+picom -b --backend glx &
 
 # --- brightness keys (handled by ~/.xbindkeysrc) ---
 xbindkeys &
