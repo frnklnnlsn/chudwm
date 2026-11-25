@@ -41,7 +41,7 @@ static const int new_window_attach_on_end = 0; /*  1 means the new window will a
 static const char *fonts[]          = {"JetBrainsMono Nerd Font:style:medium:size=12" ,"JetBrainsMono Nerd Font Mono:style:medium:size=19" };
 
 // theme
-#include "themes/tundra.h"
+#include "themes/custom.h"
 
 static const char *colors[][3]      = {
     /*                     fg       bg      border */
@@ -150,6 +150,9 @@ static const Key keys[] = {
         SHCMD("maim --select | xclip -selection clipboard -t image/png")},
 
     { MODKEY,                           XK_c,       spawn,          SHCMD("rofi -show drun") },
+    { MODKEY|ShiftMask,                 XK_x,       spawn,          SHCMD("xdg-open https://192.168.1.10:8006") },
+    { MODKEY|ShiftMask,                 XK_y,       spawn,          SHCMD("xdg-open https://youtube.com") },
+    { MODKEY|ShiftMask,                 XK_c,       spawn,          SHCMD("xdg-open https://claude.ai") },
     { MODKEY,                           XK_Return,  spawn,          SHCMD("st")},
 
     // toggle stuff
